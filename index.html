@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Michael Kwan - Luxury Property Sales</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+<body class="bg-black text-gray-200" id="top">
+    <!-- Header/Navigation -->
+    <nav class="nav-container">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <a href="#top" class="nav-brand">Michael Kwan</a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#properties" class="nav-link">Properties</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                </div>
+                <!-- Mobile Menu Button -->
+                <button class="md:hidden text-gold hover:text-gold-hover">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="hidden md:hidden fixed inset-0 z-50 bg-black bg-opacity-95 backdrop-blur-lg">
+        <div class="flex flex-col items-center justify-center h-full space-y-8">
+            <a href="#about" class="text-2xl text-gold hover:text-gold-hover">About</a>
+            <a href="#properties" class="text-2xl text-gold hover:text-gold-hover">Properties</a>
+            <a href="#contact" class="text-2xl text-gold hover:text-gold-hover">Contact</a>
+            <button class="text-gold hover:text-gold-hover mt-8">
+                <i class="fas fa-times text-3xl"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- Hero Section with Video -->
+    <div class="pt-16">
+        <div class="relative h-screen">
+            <video autoplay muted loop playsinline class="w-full h-full object-cover">
+                <source src="https://placehold.co/1920x1080.mp4" type="video/mp4">
+            </video>
+            <div class="absolute inset-0 bg-black bg-opacity-60">
+                <div class="flex items-center justify-center h-full">
+                    <div class="hero-content text-center px-4">
+                        <h1 class="hero-title" data-aos="fade-up">Strategic Property Solutions</h1>
+                        <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="200">
+                            Premium Property Solutions with Personal Touch
+                        </p>
+                        <div class="hero-buttons" data-aos="fade-up" data-aos-delay="400">
+                            <a href="#properties" class="hero-button btn-primary">
+                                View Properties
+                                <i class="fas fa-arrow-right ml-2"></i>
+                            </a>
+                            <a href="#contact" class="hero-button btn-outline">
+                                Contact Me
+                                <i class="fas fa-envelope ml-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Scroll Indicator -->
+            <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+                <i class="fas fa-chevron-down text-gold text-2xl"></i>
+            </div>
+        </div>
+    </div>
+
+    <!-- Stats Section -->
+    <section class="py-16 bg-black">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <div class="text-center" data-aos="fade-up">
+                    <div class="text-4xl font-bold text-gold mb-2">100+</div>
+                    <div class="text-gray-400">Properties Sold</div>
+                </div>
+                <div class="text-center" data-aos="fade-up" data-aos-delay="100">
+                    <div class="text-4xl font-bold text-gold mb-2">95%</div>
+                    <div class="text-gray-400">Client Satisfaction</div>
+                </div>
+                <div class="text-center" data-aos="fade-up" data-aos-delay="200">
+                    <div class="text-4xl font-bold text-gold mb-2">10+</div>
+                    <div class="text-gray-400">Years Experience</div>
+                </div>
+                <div class="text-center" data-aos="fade-up" data-aos-delay="300">
+                    <div class="text-4xl font-bold text-gold mb-2">50M+</div>
+                    <div class="text-gray-400">in Sales</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Profile Section -->
+    <section class="py-20 bg-black" id="about">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="glass-effect rounded-xl p-8 md:p-12">
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div class="relative" data-aos="fade-right">
+                        <img src="https://placehold.co/600x800" alt="Michael Kwan Profile" class="w-full h-[500px] object-cover rounded-xl">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent rounded-xl"></div>
+                        <div class="absolute bottom-6 left-6 right-6">
+                            <h3 class="text-2xl font-bold text-white mb-2">Michael Kwan</h3>
+                            <p class="text-gray-200">Luxury Property Specialist</p>
+                        </div>
+                    </div>
+                    <div data-aos="fade-left">
+                        <h2 class="text-4xl font-bold mb-6 text-gold">About Me</h2>
+                        <p class="text-gray-300 mb-6">
+                            With over a decade of experience in luxury real estate, I specialize in finding the perfect property match for my discerning clients. My portfolio includes some of the most prestigious properties in the area.
+                        </p>
+                        <div class="space-y-4 mb-8">
+                            <div class="flex items-center text-gray-300">
+                                <i class="fas fa-award text-gold text-xl mr-4"></i>
+                                <span>Top Luxury Property Agent 2023</span>
+                            </div>
+                            <div class="flex items-center text-gray-300">
+                                <i class="fas fa-certificate text-gold text-xl mr-4"></i>
+                                <span>Certified Luxury Home Specialist</span>
+                            </div>
+                            <div class="flex items-center text-gray-300">
+                                <i class="fas fa-star text-gold text-xl mr-4"></i>
+                                <span>5-Star Client Rating</span>
+                            </div>
+                        </div>
+                        <a href="#contact" class="hero-button btn-primary inline-flex items-center">
+                            Work With Me
+                            <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Properties -->
+    <section class="py-20 bg-gray-900" id="properties">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-4 text-gold" data-aos="fade-up">Our Properties</h2>
+            
+            <!-- Property Type Tabs -->
+            <div class="flex justify-center gap-8 mb-12">
+                <button class="text-gray-400 hover:text-gold px-4 py-2 font-semibold" data-tab="residential">
+                    Residential Properties
+                </button>
+                <button class="text-gold border-b-2 border-gold px-4 py-2 font-semibold" data-tab="industrial">
+                    Industrial Properties
+                </button>
+            </div>
+
+            <!-- Residential Properties -->
+            <div id="residential-properties" class="property-section hidden">
+                <p class="text-gray-400 text-center mb-12" data-aos="fade-up">Discover our exclusive residential properties</p>
+                
+                <div class="grid md:grid-cols-2 gap-8">
+                    <!-- Residential Property Card 1 -->
+                    <div class="glass-effect rounded-xl overflow-hidden group" data-aos="fade-up">
+                        <div class="relative">
+                            <img src="rcard1.jpg" alt="Luxury Property" class="w-full h-72 object-cover transition-transform duration-500 group-hover:scale-110">
+                            <div class="absolute top-4 left-4 bg-gold text-black px-4 py-2 rounded-full text-sm font-semibold">
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2">Luxury Penthouse</h3>
+                            <p class="text-gray-400 mb-4">Prime location with stunning city views</p>
+                            <div class="flex justify-between text-sm text-gray-400 mb-8">
+                                <span><i class="fas fa-bed mr-2"></i>4 Beds</span>
+                                <span><i class="fas fa-bath mr-2"></i>3 Baths</span>
+                                <span><i class="fas fa-ruler-combined mr-2"></i>2,500 sqft</span>
+                            </div>
+                            <a href="javascript:void(0)" onclick="openWhatsApp('Luxury Penthouse')" class="hero-button btn-outline w-full text-center">
+                                Inquire Now
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Residential Property Card 2 -->
+                    <div class="glass-effect rounded-xl overflow-hidden group" data-aos="fade-up" data-aos-delay="100">
+                        <div class="relative">
+                            <img src="rcard2.jpg" alt="Luxury Villa" class="w-full h-72 object-cover transition-transform duration-500 group-hover:scale-110">
+                            <div class="absolute top-4 left-4 bg-gold text-black px-4 py-2 rounded-full text-sm font-semibold">
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2">Seaside Villa</h3>
+                            <p class="text-gray-400 mb-4">Beachfront property with private access</p>
+                            <div class="flex justify-between text-sm text-gray-400 mb-8">
+                                <span><i class="fas fa-bed mr-2"></i>5 Beds</span>
+                                <span><i class="fas fa-bath mr-2"></i>4 Baths</span>
+                                <span><i class="fas fa-ruler-combined mr-2"></i>3,800 sqft</span>
+                            </div>
+                            <a href="javascript:void(0)" onclick="openWhatsApp('Seaside Villa')" class="hero-button btn-outline w-full text-center">
+                                Inquire Now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Industrial Properties -->
+            <div id="industrial-properties" class="property-section">
+                <p class="text-gray-400 text-center mb-12" data-aos="fade-up">Explore our industrial and factory properties</p>
+                
+                <div class="grid md:grid-cols-2 gap-8">
+                    <!-- Industrial Property Card 1 -->
+                    <div class="glass-effect rounded-xl overflow-hidden group" data-aos="fade-up">
+                        <div class="relative">
+                            <img src="https://placehold.co/800x500" alt="Industrial Property" class="w-full h-72 object-cover transition-transform duration-500 group-hover:scale-110">
+                            <div class="absolute top-4 left-4 bg-gold text-black px-4 py-2 rounded-full text-sm font-semibold">
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2">Modern Factory Complex</h3>
+                            <p class="text-gray-400 mb-4">State-of-the-art manufacturing facility</p>
+                            <div class="flex justify-between text-sm text-gray-400 mb-8">
+                                <span><i class="fas fa-industry mr-2"></i>Manufacturing</span>
+                                <span><i class="fas fa-truck mr-2"></i>Loading Bays</span>
+                                <span><i class="fas fa-ruler-combined mr-2"></i>50,000 sqft</span>
+                            </div>
+                            <a href="javascript:void(0)" onclick="openWhatsApp('Modern Factory Complex')" class="hero-button btn-outline w-full text-center">
+                                Inquire Now
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Industrial Property Card 2 -->
+                    <div class="glass-effect rounded-xl overflow-hidden group" data-aos="fade-up" data-aos-delay="100">
+                        <div class="relative">
+                            <img src="https://placehold.co/800x500" alt="Warehouse Property" class="w-full h-72 object-cover transition-transform duration-500 group-hover:scale-110">
+                            <div class="absolute top-4 left-4 bg-gold text-black px-4 py-2 rounded-full text-sm font-semibold">
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2">Logistics Hub</h3>
+                            <p class="text-gray-400 mb-4">Strategic location with excellent connectivity</p>
+                            <div class="flex justify-between text-sm text-gray-400 mb-8">
+                                <span><i class="fas fa-warehouse mr-2"></i>Storage</span>
+                                <span><i class="fas fa-road mr-2"></i>Highway Access</span>
+                                <span><i class="fas fa-ruler-combined mr-2"></i>35,000 sqft</span>
+                            </div>
+                            <a href="javascript:void(0)" onclick="openWhatsApp('Logistics Hub')" class="hero-button btn-outline w-full text-center">
+                                Inquire Now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Past Projects -->
+    <section class="py-20 bg-black">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-4 text-gold" data-aos="fade-up">Past Projects</h2>
+            <p class="text-gray-400 text-center mb-12" data-aos="fade-up">A showcase of successfully completed luxury property sales</p>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Past Project 1 -->
+                <div class="glass-effect rounded-xl overflow-hidden" data-aos="fade-up">
+                    <img src="https://placehold.co/600x400" alt="Past Project 1" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">The Grand Estate</h3>
+                        <p class="text-gray-400 mb-2">Sold for $4.2M</p>
+                        <div class="flex items-center text-sm text-gray-400">
+                            <i class="fas fa-calendar mr-2"></i>
+                            <span>Sold in 2023</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Past Project 2 -->
+                <div class="glass-effect rounded-xl overflow-hidden" data-aos="fade-up" data-aos-delay="100">
+                    <img src="https://placehold.co/600x400" alt="Past Project 2" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Riverside Mansion</h3>
+                        <p class="text-gray-400 mb-2">Sold for $5.8M</p>
+                        <div class="flex items-center text-sm text-gray-400">
+                            <i class="fas fa-calendar mr-2"></i>
+                            <span>Sold in 2023</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Past Project 3 -->
+                <div class="glass-effect rounded-xl overflow-hidden" data-aos="fade-up" data-aos-delay="200">
+                    <img src="https://placehold.co/600x400" alt="Past Project 3" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Sky Penthouse</h3>
+                        <p class="text-gray-400 mb-2">Sold for $3.5M</p>
+                        <div class="flex items-center text-sm text-gray-400">
+                            <i class="fas fa-calendar mr-2"></i>
+                            <span>Sold in 2022</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="py-20 bg-black" id="contact">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="glass-effect rounded-xl p-8 md:p-12">
+                <h2 class="text-4xl font-bold text-center mb-8 text-gold" data-aos="fade-up">Get in Touch</h2>
+                <form class="max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="200">
+                    <div class="grid md:grid-cols-2 gap-6 mb-6">
+                        <div>
+                            <label class="block text-sm font-medium mb-2">Name</label>
+                            <input type="text" class="w-full px-4 py-3 rounded-lg bg-white/5 border border-gray-700 focus:border-gold focus:ring-2 focus:ring-gold/50 transition">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium mb-2">Email</label>
+                            <input type="email" class="w-full px-4 py-3 rounded-lg bg-white/5 border border-gray-700 focus:border-gold focus:ring-2 focus:ring-gold/50 transition">
+                        </div>
+                    </div>
+                    <div class="mb-6">
+                        <label class="block text-sm font-medium mb-2">Message</label>
+                        <textarea rows="4" class="w-full px-4 py-3 rounded-lg bg-white/5 border border-gray-700 focus:border-gold focus:ring-2 focus:ring-gold/50 transition"></textarea>
+                    </div>
+                    <button type="submit" class="w-full hero-button btn-primary">
+                        Send Message
+                        <i class="fas fa-paper-plane ml-2"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="javascript:void(0)" onclick="openWhatsApp('your properties')" class="fixed bottom-8 right-8 bg-green-500 text-white p-4 rounded-full shadow-lg hover:bg-green-600 transition z-50 group">
+        <i class="fab fa-whatsapp text-2xl"></i>
+        <span class="absolute right-full mr-3 bg-white text-gray-800 px-4 py-2 rounded-lg text-sm font-medium opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 whitespace-nowrap">
+            Chat on WhatsApp
+        </span>
+    </a>
+
+    <!-- Footer -->
+    <footer class="py-12 bg-black border-t border-gray-800">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold text-gold mb-4">Michael Kwan</h3>
+                    <p class="text-gray-400">Luxury Property Sales Agent</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#about" class="text-gray-400 hover:text-gold">About</a></li>
+                        <li><a href="#properties" class="text-gray-400 hover:text-gold">Properties</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-gold">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Contact</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><i class="fas fa-phone mr-2"></i>+6012-528 7779</li>
+                        <li><i class="fas fa-envelope mr-2"></i>contact@janedoe.com</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Follow Me</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-gold text-xl">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-gold text-xl">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-gold text-xl">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-12 pt-8 border-t border-gray-800 text-center text-gray-400">
+                <p>&copy; 2024 Michael Kwan. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Initialize AOS -->
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true,
+            offset: 100
+        });
+
+        // Navigation scroll effect
+        window.addEventListener('scroll', function() {
+            const nav = document.querySelector('.nav-container');
+            if (window.scrollY > 100) {
+                nav.classList.add('nav-scrolled');
+            } else {
+                nav.classList.remove('nav-scrolled');
+            }
+        });
+
+        // Mobile menu toggle
+        const menuButton = document.querySelector('.md\\:hidden');
+        const mobileMenu = document.querySelector('.fixed.inset-0');
+        const closeButton = mobileMenu.querySelector('.fa-times').parentElement;
+
+        menuButton.addEventListener('click', () => {
+            mobileMenu.classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        });
+
+        closeButton.addEventListener('click', () => {
+            mobileMenu.classList.add('hidden');
+            document.body.style.overflow = '';
+        });
+
+        // Close mobile menu on link click
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+                document.body.style.overflow = '';
+            });
+        });
+
+        // Property Type Tabs
+        const propertyTabs = document.querySelectorAll('[data-tab]');
+        const propertySections = document.querySelectorAll('.property-section');
+
+        propertyTabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                // Remove active states
+                propertyTabs.forEach(t => {
+                    t.classList.remove('text-gold', 'border-b-2', 'border-gold');
+                    t.classList.add('text-gray-400');
+                });
+                
+                // Add active state to clicked tab
+                tab.classList.remove('text-gray-400');
+                tab.classList.add('text-gold', 'border-b-2', 'border-gold');
+                
+                // Hide all sections
+                propertySections.forEach(section => {
+                    section.classList.add('hidden');
+                });
+                
+                // Show selected section
+                const targetSection = document.getElementById(`${tab.dataset.tab}-properties`);
+                targetSection.classList.remove('hidden');
+            });
+        });
+
+        // WhatsApp Function
+        function openWhatsApp(propertyName) {
+            const phone = "60125287779"; // Remove spaces and format number
+            const message = `Hi Michael, I'm interested in the ${propertyName}. Can you provide more information?`;
+            const encodedMessage = encodeURIComponent(message);
+            const whatsappUrl = `https://wa.me/${phone}?text=${encodedMessage}`;
+            window.open(whatsappUrl, '_blank');
+        }
+    </script>
+</body>
+</html>
